@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+div{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: auto 0;
+}
+
+.header-box{
+    background-color: #b3d6fe;
+}
+.content-box{
+    background-color: #eaeef1;
+}
+.sign-up-box{
+    background-color: #d7e9ff;
+}
+.feature-box-yellow{
+    background-color: #f5cf8e;
+}
+.feature-box-red{
+    background-color: #f09a9d;
+}
+.feature-box-purple{
+    background-color: #c9c7f9;
+}
+
