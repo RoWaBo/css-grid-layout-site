@@ -1,11 +1,21 @@
+*{
+    margin: 0;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-div{
+h2{
     font-family: 'Raleway', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
-    text-align: center;
-    padding: auto 0;
+    font-weight: lighter;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-box{
@@ -27,3 +37,8 @@ div{
     background-color: #c9c7f9;
 }
 
+.main-content{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
