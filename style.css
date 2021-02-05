@@ -2,7 +2,6 @@
     margin: 0;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 h2{
@@ -41,4 +40,50 @@ div{
     display: grid;
     width: 100vw;
     height: 100vh;
+}
+
+/* ====TABLET MEADIA QUERY==== */
+@media screen and (min-width: 768px){
+
+    .main-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "content content"
+        "sign-up feature-yellow"
+        "feature-red feature-purple";
+    }
+
+    .header-box{
+        grid-area: header;
+    }
+    .content-box{
+        grid-area: content;
+    }
+    .sign-up-box{
+        grid-area: sign-up;
+    }
+    .feature-box-yellow{
+        grid-area: feature-yellow;
+    }
+    .feature-box-red{
+        grid-area: feature-red;
+    }
+    .feature-box-purple{
+        grid-area: feature-purple;
+    }
+}
+
+/* ====DESKTOP MEADIA QUERY==== */
+@media screen and (min-width: 1050px){
+    .main-content{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr .5fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "feature-yellow feature-purple feature-red"
+        "sign-up sign-up sign-up"
+        "content content content";
+    }
 }
